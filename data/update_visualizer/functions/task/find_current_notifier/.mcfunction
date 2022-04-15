@@ -9,6 +9,3 @@ data modify storage : _ append value {}
 
   execute unless data storage : _[-1].if{success: 1b} run function update_visualizer:task/find_current_notifier/failed
 data remove storage : _[-1]
-
-## 終わってなかったらループ
-execute unless data storage update_visualizer: task{done: 1b} if data storage update_visualizer: task.notifiers[-1] run function update_visualizer:task/find_current_notifier/

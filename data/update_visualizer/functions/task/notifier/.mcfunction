@@ -9,5 +9,5 @@ data modify storage : _[-1].data set from entity @s data
   execute if data storage : _[-1].data.remains[-1] run function update_visualizer:task/notifier/check_remains/
 data modify entity @s data set from storage : _[-1].data
 
-## remainsが空になったらpop
-execute unless data storage : _[-1].data.remains[-1] run function update_visualizer:task/notifier/completed
+## remainsが空になったら/kill
+execute unless data storage : _[-1].data.remains[-1] run kill @s
