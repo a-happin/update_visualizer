@@ -1,4 +1,4 @@
-datapack-template
+update_visualizer
 ==
 
 ## Features
