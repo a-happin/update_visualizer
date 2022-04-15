@@ -11,24 +11,28 @@ update_visualizer
 
 ---
 
-> ⚠ スコアボードなどを定義する副作用があるため、このデータパック専用のワールドを作成することを推奨します。
+> ⚠ Visualizeタスクの実行中はブロックアップデートのあった場所にエンティティを召喚します。
+>    Update Suppression などのブロックアップデートを大量発生させる回路に対して使用すると、エンティティが大量に召喚されてワールドが激重になる可能性が高いため注意してください。(未検証)
 
 ---
-
-### Visualizeタスクの実行
-
-`Visualize`を持って、アクティベーターレール、またはパワードレールに向かって右クリックをするとアップデート順を可視化します。
 
 ### 専用アイテムの入手
 
 ```mcfunction
+## Visualize
 loot give @s loot update_visualizer:visualize
+
+## Next Step
 loot give @s loot update_visualizer:next_step
 ```
 
+### Visualizeタスクの実行
+
+`Visualize`を持って、アクティベーターレール、またはパワードレールに向かって右クリックをするとアップデート順を可視化します。(Visualizeタスクの実行)
+
 ### intervalの変更
 
-1つのブロックアップデートを表示する時間を変更することができます。  
+1つのブロックアップデートを表示する時間を変更することができます。
 
 - デフォルトは`4tick`です
 - `0`は特別な値であり、`0`に設定すると手動モードになります。
@@ -66,3 +70,8 @@ data remove storage update_visualizer: settings.interval
 
 ## License
 Creative Commons Zero v1.0 Universal
+
+## Special Thanks
+
+- [@enokilovin](https://twitter.com/enokilovin)
+    仕様を教えてくださいました。ありがとうございます。
