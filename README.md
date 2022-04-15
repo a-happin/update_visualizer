@@ -40,7 +40,7 @@ loot give @s loot update_visualizer:next_step
 data modify storage update_visualizer: settings.interval set value 4
 
 ## intervalを1に変更する(早くする)
-data modify storage update_visualizer: settings.interval set value 4
+data modify storage update_visualizer: settings.interval set value 1
 
 ## intervalを10に変更する(遅くする)
 data modify storage update_visualizer: settings.interval set value 10
@@ -49,6 +49,12 @@ data modify storage update_visualizer: settings.interval set value 10
 ### (消すことで戻ります)
 data remove storage update_visualizer: settings.interval
 ```
+
+### 手動モード
+
+↑で`settings.interval`を0にすることで手動モードになります
+
+手動モード中は、`Next Step`を右クリックすることで次のステップに移ります。
 
 ## Requirement
 
