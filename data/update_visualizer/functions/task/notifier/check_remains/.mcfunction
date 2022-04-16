@@ -1,7 +1,5 @@
 #> update_visualizer:task/notifier/check_remains/
-#@within
-#  function update_visualizer:task/notifier/
-#  function update_visualizer:task/notifier/check_remains/
+#@within function update_visualizer:task/notifier/
 
 data modify storage : _ append value {}
   data modify storage : _[-1].switch.case set from storage : _[-2].data.remains[-1]
