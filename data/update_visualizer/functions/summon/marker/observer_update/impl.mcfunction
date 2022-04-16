@@ -1,5 +1,7 @@
 #> update_visualizer:summon/marker/observer_update/impl
-#@within function update_visualizer:summon/marker/observer_update/
+#@within
+#  function update_visualizer:summon/marker/observer_update/
+#  function update_visualizer:summon/marker/observer_update/notifier
 
 ## calc $time and set nbt
 scoreboard players set $time update_visualizer 4
