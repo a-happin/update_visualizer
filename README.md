@@ -89,6 +89,12 @@ data modify storage update_visualizer: settings.max_depth set value 1
 data remove storage update_visualizer: settings.max_depth
 ```
 
+#### 現在の設定を確認する
+
+```mcfunction
+data get storage update_visualizer: settings
+```
+
 ## Requirement
 
 - Minecraft JE 1.18.2
