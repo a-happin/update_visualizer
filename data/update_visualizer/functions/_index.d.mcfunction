@@ -28,4 +28,4 @@
 
 #>
 #@within update_visualizer:summon/notifier/**
-  #declare score_holder $genetator
+  #declare score_holder $generator
