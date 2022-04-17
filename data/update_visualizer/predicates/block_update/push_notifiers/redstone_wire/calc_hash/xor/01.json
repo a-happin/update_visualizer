@@ -6,7 +6,7 @@
       "score": "update_visualizer",
       "target": {
         "type": "fixed",
-        "name": "$hash1/65536"
+        "name": "$x"
       }
     },
     "range": {
@@ -20,7 +20,7 @@
       "score": "update_visualizer",
       "target": {
         "type": "fixed",
-        "name": "$hash1%65536"
+        "name": "$y"
       }
     },
     "range": {

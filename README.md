@@ -108,6 +108,24 @@ data modify storage update_visualizer: settings.strict_powered_check set value t
 data remove storage update_visualizer: settings.strict_powered_check
 ```
 
+#### debug
+
+デバッグ情報を出力するかどうか
+
+- デフォルトは`false`です
+- 現在は、レッドストーンパウダーに場移りしたときにハッシュ値を出力するのみです。
+
+```mcfunction
+## debugをfalseに変更する
+data modify storage update_visualizer: settings.debug set value false
+
+## debugをtrueに変更する
+data modify storage update_visualizer: settings.debug set value true
+
+## debugをデフォルト(false)に戻す
+data remove storage update_visualizer: settings.debug
+```
+
 #### 現在の設定を確認する
 
 ```mcfunction
