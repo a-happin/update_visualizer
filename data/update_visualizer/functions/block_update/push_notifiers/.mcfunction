@@ -3,7 +3,7 @@
 
 summon marker ~ ~ ~ {Tags: ["update_visualizer", "update_visualizer.block_updated"]}
 
-data modify storage : _ append value {depth: 1}
+data modify storage : _ append value {}
   execute store result storage : _[-1].depth int 1 run scoreboard players add @s update_visualizer.depth 1
   scoreboard players remove @s update_visualizer.depth 1
 
