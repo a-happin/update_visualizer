@@ -86,4 +86,4 @@ Creative Commons Zero v1.0 Universal
 ## Special Thanks
 
 - [@enokilovin](https://twitter.com/enokilovin)
-    仕様を教えてくださいました。ありがとうございます。
+  - 仕様を教えてくださいました。ありがとうございます。
