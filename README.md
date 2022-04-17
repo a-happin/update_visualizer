@@ -19,16 +19,28 @@ update_visualizer
 ### 専用アイテムの入手
 
 ```mcfunction
+## 全部まとめて入手
+loot give @s loot update_visualizer:tools/
+
+# 以下個別に入手
 ## Visualize
-loot give @s loot update_visualizer:visualize
+loot give @s loot update_visualizer:tools/visualize
 
 ## Next Step
-loot give @s loot update_visualizer:next_step
+loot give @s loot update_visualizer:tools/next_step
+
+## Exit
+loot give @s loot update_visualizer:tools/exit
 ```
 
 ### Visualizeタスクの実行
 
 `Visualize`を持って、アクティベーターレール、またはパワードレールに向かって右クリックをするとアップデート順を可視化します。(Visualizeタスクの実行)
+> ⚠ Visualizeタスクの実行中はチャンクを読み込み続けてください
+
+### Visualizeタスクの強制終了
+
+Visualizeタスクの実行中に`Exit`を右クリックすることで強制終了できます
 
 ### intervalの変更
 
