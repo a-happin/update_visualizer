@@ -89,6 +89,25 @@ data modify storage update_visualizer: settings.max_depth set value 1
 data remove storage update_visualizer: settings.max_depth
 ```
 
+#### strict_powered_check
+
+場移り判定時に`block state property`の`powered`の判定も行うかどうか
+
+- デフォルトは`false`です
+- `false`: `powered`判定を無効化する(`powered`違いに場移りする)
+- `true`: `powered`判定を有効化する(`powered`違いに場移りしない)
+
+```mcfunction
+## strict_powered_checkをfalseに変更する
+data modify storage update_visualizer: settings.strict_powered_check set value false
+
+## strict_powered_checkをtrueに変更する
+data modify storage update_visualizer: settings.strict_powered_check set value true
+
+## strict_powered_checkをデフォルト(false)に戻す
+data remove storage update_visualizer: settings.strict_powered_check
+```
+
 #### 現在の設定を確認する
 
 ```mcfunction

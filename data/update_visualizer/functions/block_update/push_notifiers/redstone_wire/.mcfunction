@@ -1,5 +1,5 @@
 #> update_visualizer:block_update/push_notifiers/redstone_wire/
-#@within function update_visualizer:block_update/push_notifiers/
+#@within function update_visualizer:block_update/push_notifiers/redstone_wire/check_powered/
 
 ## origin
 function update_visualizer:summon/notifier/block_update/

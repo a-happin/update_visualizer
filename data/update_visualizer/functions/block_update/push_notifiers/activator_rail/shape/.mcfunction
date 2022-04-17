@@ -1,0 +1,7 @@
+#> update_visualizer:block_update/push_notifiers/activator_rail/shape/
+#@within function update_visualizer:block_update/push_notifiers/activator_rail/check_powered/
+
+execute if predicate update_visualizer:is_block/horizontal_rail run function update_visualizer:block_update/push_notifiers/activator_rail/shape/horizontal
+execute unless predicate update_visualizer:is_block/horizontal_rail run function update_visualizer:block_update/push_notifiers/activator_rail/shape/ascending
+
+function update_visualizer:block_update/push_notifiers/commit
