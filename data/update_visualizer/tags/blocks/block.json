@@ -1,6 +1,7 @@
 {
   "values": [
     "activator_rail",
-    "powered_rail"
+    "powered_rail",
+    "redstone_wire"
   ]
 }

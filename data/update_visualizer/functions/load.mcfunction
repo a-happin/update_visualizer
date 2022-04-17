@@ -16,4 +16,9 @@ function #load_once
   team add update_visualizer.observer_update
   team modify update_visualizer.observer_update color aqua
 
+## integral constants
+scoreboard players set #16 update_visualizer 16
+scoreboard players set #65536 update_visualizer 65536
+
+
 tellraw @a [{"text": "Debug» ", "color": "green"}, "Datapack Loaded."]

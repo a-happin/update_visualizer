@@ -9,6 +9,9 @@
 #@within update_visualizer:**
   #declare storage :
   #declare score_holder $time
+  #declare score_holder $
+  #declare score_holder #16
+  #declare score_holder #65536
   #declare tag update_visualizer
   #declare tag update_visualizer.notifier
   #declare tag update_visualizer.block_updated
@@ -22,7 +25,6 @@
 #>
 #@within update_visualizer:summon/**
   #declare tag update_visualizer.init
-  #declare score_holder $
 
 #>
 #@within update_visualizer:summon/notifier/**

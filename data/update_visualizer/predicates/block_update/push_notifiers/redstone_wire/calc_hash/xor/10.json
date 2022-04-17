@@ -1,0 +1,30 @@
+[
+  {
+    "condition": "value_check",
+    "value": {
+      "type": "score",
+      "score": "update_visualizer",
+      "target": {
+        "type": "fixed",
+        "name": "$hash1/65536"
+      }
+    },
+    "range": {
+      "max": -1
+    }
+  },
+  {
+    "condition": "value_check",
+    "value": {
+      "type": "score",
+      "score": "update_visualizer",
+      "target": {
+        "type": "fixed",
+        "name": "$hash1%65536"
+      }
+    },
+    "range": {
+      "min": 0
+    }
+  }
+]
