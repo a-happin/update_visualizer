@@ -9,6 +9,7 @@ function #load_once
 #>
 #@within * update_visualizer:**
   scoreboard objectives add update_visualizer dummy
+  scoreboard objectives add update_visualizer.depth dummy
   scoreboard objectives add update_visualizer.notifier.id dummy
 
   team add update_visualizer.block_update

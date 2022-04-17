@@ -42,12 +42,20 @@ loot give @s loot update_visualizer:tools/exit
 
 Visualizeタスクの実行中に`Exit`を右クリックすることで強制終了できます
 
-### intervalの変更
+### ステップ実行モード
+
+設定で`settings.interval`を0にすることでステップ実行モードになります
+
+ステップ実行モード中は、`Next Step`を右クリックすることで次のステップに移ります。
+
+### 設定
+
+#### interval
 
 1つのブロックアップデートを表示する時間を変更することができます。
 
 - デフォルトは`4tick`です
-- `0`は特別な値であり、`0`に設定すると手動モードになります。
+- `0`は特別な値であり、`0`に設定するとステップ実行モードになります。
 - `0` ~ `599`が利用可能です(それ以外は未検証)
 - Visualizeタスクの実行中に変更することで途中から速度が変わります。(遅くしすぎた際に便利です)
 
@@ -66,11 +74,20 @@ data modify storage update_visualizer: settings.interval set value 10
 data remove storage update_visualizer: settings.interval
 ```
 
-### 手動モード
+#### max_depth
 
-↑で`settings.interval`を0にすることで手動モードになります
+場移りの最大の深さを制限することができます
 
-手動モード中は、`Next Step`を右クリックすることで次のステップに移ります。
+- デフォルトは無制限です
+- `0`~`2147483647`が利用可能です
+
+```mcfunction
+## max_depthを1に変更する
+data modify storage update_visualizer: settings.max_depth set value 1
+
+## max_depthをデフォルト(無制限)に戻す
+data remove storage update_visualizer: settings.max_depth
+```
 
 ## Requirement
 
