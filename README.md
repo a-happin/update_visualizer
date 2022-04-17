@@ -3,7 +3,7 @@ update_visualizer
 
 ## Features
 
-レールのブロックアップデート順を可視化するデータパックです。
+レール、レッドストーンパウダーのブロックアップデート順を可視化するデータパックです。
 
 > 参考: https://www.youtube.com/watch?v=uZyVx1TIbnY
 
@@ -35,7 +35,7 @@ loot give @s loot update_visualizer:tools/exit
 
 ### Visualizeタスクの実行
 
-`Visualize`を持って、アクティベーターレール、またはパワードレールに向かって右クリックをするとアップデート順を可視化します。(Visualizeタスクの実行)
+`Visualize`を持って、アクティベーターレール、パワードレール、またはレッドストーンパウダーに向かって右クリックをするとアップデート順を可視化します。(Visualizeタスクの実行)
 > ⚠ Visualizeタスクの実行中はチャンクを読み込み続けてください
 
 ### Visualizeタスクの強制終了
@@ -80,6 +80,7 @@ data remove storage update_visualizer: settings.interval
 
 - デフォルトは無制限です
 - `0`~`2147483647`が利用可能です
+- `0`だと最初の場移りすら起こらないので`0`に設定する意味はないと思います
 
 ```mcfunction
 ## max_depthを1に変更する
