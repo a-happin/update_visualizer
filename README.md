@@ -113,7 +113,7 @@ data remove storage update_visualizer: settings.strict_powered_check
 デバッグ情報を出力するかどうか
 
 - デフォルトは`false`です
-- 現在は、レッドストーンパウダーに場移りしたときにハッシュ値を出力するのみです。
+- 現在は、レッドストーンパウダーに場移りしたときにハッシュ値を出力する機能しかありません
 
 ```mcfunction
 ## debugをfalseに変更する
