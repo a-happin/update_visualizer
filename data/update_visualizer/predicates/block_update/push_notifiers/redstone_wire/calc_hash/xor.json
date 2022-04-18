@@ -1,0 +1,68 @@
+[
+  {
+    "condition": "alternative",
+    "terms": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "score": "update_visualizer",
+          "target": {
+            "type": "fixed",
+            "name": "$x"
+          }
+        },
+        "range": {
+          "max": -1
+        }
+      },
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "score": "update_visualizer",
+          "target": {
+            "type": "fixed",
+            "name": "$y"
+          }
+        },
+        "range": {
+          "max": -1
+        }
+      }
+    ]
+  },
+  {
+    "condition": "alternative",
+    "terms": [
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "score": "update_visualizer",
+          "target": {
+            "type": "fixed",
+            "name": "$x"
+          }
+        },
+        "range": {
+          "min": 0
+        }
+      },
+      {
+        "condition": "value_check",
+        "value": {
+          "type": "score",
+          "score": "update_visualizer",
+          "target": {
+            "type": "fixed",
+            "name": "$y"
+          }
+        },
+        "range": {
+          "min": 0
+        }
+      }
+    ]
+  }
+]
