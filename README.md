@@ -7,6 +7,32 @@ update_visualizer
 
 > 参考: https://www.youtube.com/watch?v=uZyVx1TIbnY
 
+---
+
+※実際にブロックアップデートを与えているわけではなく、データパックで再現しているだけなので実際の挙動と異なる場合があります。
+
+### レッドストーンパウダーのBU時に発生する基準点の順番について
+
+1. `Origin`→`-Y`→`+Y`→`-Z`→`+Z`→`-X`→`+X`の順番で基準点を召喚
+1. ハッシュ値を計算
+1. 昇順に安定ソート
+
+を行っています
+
+### ハッシュ値の計算
+
+以下を[データパックで実装しています](https://github.com/a-happin/update_visualizer/blob/master/data/update_visualizer/functions/block_update/push_notifiers/redstone_wire/calc_hash.mcfunction)
+```cpp
+// floorDiv, floorModはそれぞれJavaのMath.floorDiv, Math.floorMod
+int32_t hash(int32_t x, int32_t y, int32_t z)
+{
+  auto h1 = x + y * 31 + z * 961;
+  auto h2 = floorDiv(h1, 65536) ^ floorMod(h1, 65536);
+  h2 = floorMod(h2, 16);
+  return h2;
+}
+```
+
 ## Usage
 
 ---
