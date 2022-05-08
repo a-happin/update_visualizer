@@ -3,7 +3,7 @@
 
 #>
 #@public
-#declare storage :
+  #declare storage :
 
 #>
 #@within function update_visualizer:_impl/sort/**
