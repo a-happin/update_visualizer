@@ -167,6 +167,9 @@ data get storage update_visualizer: settings
 
 ## Installation
 
+- [releases](https://github.com/a-happin/update_visualizer/releases)からこのデータパックと
+- [player-datapacks](https://github.com/a-happin/player-datapacks/releases)から依存ライブラリ(`player.tick`, `player.used.warped_fungus_on_a_stick`)をダウンロードしてdatapacksフォルダに入れてください。
+
 ## License
 Creative Commons Zero v1.0 Universal
 
