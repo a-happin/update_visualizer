@@ -20,6 +20,3 @@ function #load_once
 ## integral constants
 scoreboard players set #16 update_visualizer 16
 scoreboard players set #65536 update_visualizer 65536
-
-
-tellraw @a [{"text": "Debug» ", "color": "green"}, "Datapack Loaded."]
