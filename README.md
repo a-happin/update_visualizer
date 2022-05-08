@@ -162,8 +162,8 @@ data get storage update_visualizer: settings
 ## Requirement
 
 - Minecraft JE 1.18.2
-- [player_event](https://github.com/a-happin/player_event)
-- [player_event.used_id](https://github.com/a-happin/player_event.used_id)
+- [player.tick](https://github.com/a-happin/player-datapacks/tree/master/01.player.tick)
+- [player.used.warped_fungus_on_a_stick](https://github.com/a-happin/player-datapacks/tree/master/10.player.used.warped_fungus_on_a_stick)
 
 ## Installation
 

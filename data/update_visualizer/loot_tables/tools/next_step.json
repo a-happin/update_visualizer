@@ -51,7 +51,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData: 2, id: 2}"
+              "tag": "{CustomModelData: 2, id: 2, update_visualizer: \"next_step\"}"
             }
           ]
         }

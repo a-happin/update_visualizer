@@ -49,7 +49,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData: 1, id: 1}"
+              "tag": "{CustomModelData: 1, id: 1, update_visualizer: \"visualize\"}"
             }
           ]
         }

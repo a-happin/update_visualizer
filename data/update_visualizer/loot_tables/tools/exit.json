@@ -44,7 +44,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData: 3, id: 3}"
+              "tag": "{CustomModelData: 3, id: 3, update_visualizer: \"exit\"}"
             }
           ]
         }
